@@ -1,0 +1,21 @@
+{
+  "name": "scrypt-opcat-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sendCAT20": "npx -y tsx src/sendCAT20.ts",
+    "sendBTC": "npx -y tsx src/sendBTC.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "patch-package"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@opcat-labs/cat-sdk": "1.0.3"
+  },
+  "devDependencies": {
+    "patch-package": "^8.0.1"
+  }
+}

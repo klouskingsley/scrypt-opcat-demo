@@ -21,7 +21,7 @@ export interface TokenBalance {
 
 export interface TokenUtxo {
   txId: string;
-  vout: number;
+  outputIndex: number;
   satoshis: number;
   script: string;
   data: string;
@@ -88,6 +88,8 @@ export class OpcatOpenAPIClient {
       decimals: number;
       minterScriptHash: string;
       tokenScriptHash: string;
+      hasAdmin: boolean;
+      adminScriptHash: string;
     }>(
       `/v1/tokens/${tokenIdOrTokenScriptHash}`
     );

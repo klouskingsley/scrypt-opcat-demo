@@ -34,6 +34,8 @@ async function sendCAT20(
         [{address: toTokenOwnerAddress(toAddress), amount: amountTokens}],
         toTokenOwnerAddress(signerAddress),
         feeRatePerByte,
+        tokenInfo.hasAdmin,
+        tokenInfo.adminScriptHash,
     )
 
     console.log(`Transaction sent with txId: ${sendRes.sendTxId}`);
@@ -66,7 +68,7 @@ async function filterTokenUtxosByAmount(tokenUtxos: TokenUtxo[], amount: bigint)
 }
 
 sendCAT20(
-    'f8a250901f310373c498a08e20e20df68a0b71487a426cdc58c7778aee60c7c2_0',
+    '5210788aa2d70f82766d539e3fa2881a53cfe626ae37b5f228344b6aad2c9e0a_0',
     'cRZ5SwQRXB75Epex3x9wdaeJ6H1fLkkwHvMWJDnU3S3JjA2djvFg',
     'moP2wuUKQ5aqXswdeGX4VoRjbbyd6bc123',
     10n,

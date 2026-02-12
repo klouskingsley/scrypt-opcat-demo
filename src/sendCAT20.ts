@@ -68,9 +68,9 @@ async function filterTokenUtxosByAmount(tokenUtxos: TokenUtxo[], amount: bigint)
 }
 
 sendCAT20(
-    '5210788aa2d70f82766d539e3fa2881a53cfe626ae37b5f228344b6aad2c9e0a_0',
-    'cRZ5SwQRXB75Epex3x9wdaeJ6H1fLkkwHvMWJDnU3S3JjA2djvFg',
-    'moP2wuUKQ5aqXswdeGX4VoRjbbyd6bc123',
-    10n,
+    'd5c05af5c969c6fd0fa486e524e530c67c37dc7d44760c805dd7f59ff315b9f9_1',
+    '',
+    'mhuwjQJ79T5hn4XW15uBx3VtKJfCeUY6Fx',
+    BigInt(1e8),
     0.01
 )

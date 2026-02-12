@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deployTokens": "npx -y tsx src/deployTokens.ts",
     "sendCAT20": "npx -y tsx src/sendCAT20.ts",
     "sendBTC": "npx -y tsx src/sendBTC.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,10 +14,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@opcat-labs/cat-sdk": "2.0.0-beta-256ca894-20251118"
+    "@opcat-labs/cat-sdk": "3.3.0"
   },
   "devDependencies": {
-    "patch-package": "^8.0.1"
+    "@types/node": "^24.10.1",
+    "patch-package": "^8.0.1",
+    "sharp": "^0.34.5",
+    "typescript": "^5.9.3"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
